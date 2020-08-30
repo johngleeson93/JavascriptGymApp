@@ -5,7 +5,7 @@ const logger = require("../utils/logger");
 const assessmentlistStore = require("../models/assessmentlist-store.js");
 const memberStore = require("../models/member-store.js");
 const uuid = require("uuid");
-const gymutility = require("./gymutility.js");
+const utility = require("./utility.js");
 
 const dashboard = {
   index(request, response) {
@@ -13,9 +13,9 @@ const dashboard = {
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       title: "Member Dashboard",
-      assessments: assessmentlistStore.getMemberAssessments(loggedInMember.id),
+      //assessments: assessmentlistStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
-      bmi: gymutility.bmi(memberStore.getMemberById(loggedInMember.id), assessmentStore.getMemberAssessments[0])
+//      bmi: utility.bmi(memberStore.getMemberById(loggedInMember.id), assessmentlistStore.getMemberAssessments[0])
     };
     logger.info("about to render ${memberid}");
     response.render("dashboard", viewData);
@@ -25,7 +25,7 @@ const dashboard = {
     const loggedInMember = accounts.getCurrentMember(request);
     const assessmentId = request.params.id;
     logger.debug(`Deleting Assessment ${assessmentId}`);
-    assessmentStore.removeAssessment(assessmentId);
+    assessmentlistStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
 
@@ -43,7 +43,7 @@ const dashboard = {
       hips: Number(request.body.hips)
     };
     logger.debug("Adding a new Assessment", newAssessment);
-    assessmentStore.addAssessment(newAssessment);
+    assessmentlistStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   },
   

@@ -2,11 +2,14 @@
 
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
-const assessmentStore = require("../models/assessment-store.js");
+const assessmentlistStore = require("../models/assessmentlist-store.js");
 const memberStore = require("../models/member-store.js");
 const uuid = require("uuid");
 
-const gymutility = {
+const utility = {
+const assessmentStore = require("../models/assessment-store.js");
+const memberStore = require("../models/member-store.js");
+const uuid = require("uuid");
   bmi (member, assessment) {
     const bmi = assessment.weight() / ((member.height() / 100) * (member.height() / 100))
   },
@@ -34,4 +37,4 @@ const gymutility = {
   }
 };
 
-module.exports = gymutility;
+module.exports = utility;

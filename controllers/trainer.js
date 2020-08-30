@@ -2,7 +2,7 @@
 
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
-const assessmentStore = require("../models/assessment-store.js");
+const assessmentlistStore = require("../models/assessmentlist-store.js");
 const memberStore = require("../models/member-store.js");
 const trainerStore = require("../models/trainer-store.js");
 const uuid = require("uuid");
@@ -13,7 +13,7 @@ const trainerdashboard = {
     const loggedInTrainer = accounts.getCurrentTrainer(request);
     const viewData = {
       title: "Trainer Dashboard",
-      assessments: assessmentStore.getAllAssessments(),
+      assessments: assessmentlistStore.getAllAssessments(),
       members: memberStore.getAllMembers(),
     };
     response.render("trainerdashboard", viewData);
