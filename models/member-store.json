@@ -21,6 +21,28 @@
       "startWeight": "55",
       "gender": "f",
       "id": "ec26fb10-e929-11ea-80f7-ff5a113bcf83"
+    },
+    {
+      "firstname": "John",
+      "lastname": "Gleeson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "341 Glantan",
+      "height": "178",
+      "startWeight": "85",
+      "gender": "m",
+      "id": "fd9e5480-eadf-11ea-bf9c-7d8960fa49c9"
+    },
+    {
+      "firstname": "John",
+      "lastname": "Gleeson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "341 Glantan",
+      "height": "178",
+      "startWeight": "85",
+      "gender": "m",
+      "id": "4cb2f0e0-eae4-11ea-8cca-8d11ddfe83da"
     }
   ]
 }
