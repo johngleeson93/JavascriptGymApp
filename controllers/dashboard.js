@@ -5,7 +5,7 @@ const logger = require("../utils/logger");
 const assessmentlistStore = require("../models/assessmentlist-store.js");
 const memberStore = require("../models/member-store.js");
 const uuid = require("uuid");
-const gymutility = require("./gymutility.js");
+const utility = require("./utility.js");
 
 const dashboard = {
   index(request, response) {
