@@ -7,6 +7,9 @@ const memberStore = require("../models/member-store.js");
 const uuid = require("uuid");
 
 const utility = {
+const assessmentStore = require("../models/assessment-store.js");
+const memberStore = require("../models/member-store.js");
+const uuid = require("uuid");
   bmi (member, assessment) {
     const bmi = assessment.weight() / ((member.height() / 100) * (member.height() / 100))
   },
