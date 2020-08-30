@@ -1,2 +1,2 @@
-Welcome to the Javascript Gym app
-=================================
+Welcome to the Javascript Gym
+=============================

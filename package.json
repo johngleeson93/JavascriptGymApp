@@ -1,7 +1,7 @@
 {
-  "name": "playlist-4",
+  "name": "Javascriptgymapp",
   "version": "0.0.1",
-  "description": "Project at the end of Playlist-4 lab",
+  "description": "Javascript gym app",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -10,19 +10,19 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.6",
-    "express-handlebars": "^4.0.4",
-    "fs-extra": "^9.0.0",
-    "lodash": "^4.17.15",
+    "express-fileupload": "^1.2.0",
+    "express-handlebars": "^5.1.0",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
     "lowdb": "^1.0.0",
-    "uuid": "^8.0.0",
-    "winston": "^3.2.1"
+    "uuid": "^8.3.0",
+    "winston": "^3.3.3"
   },
   "engines": {
     "node": "12.x"
   },
   "repository": {
-    "url": "https://github.com/wit-hdip-comp-sci-2020/playlist-2"
+    "url": "https://github.com/johngleeson93/Javascriptgymapp.git"
   },
   "license": "MIT",
   "keywords": [

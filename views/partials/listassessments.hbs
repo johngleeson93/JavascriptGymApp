@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    {{#each playlist.songs}}
+    {{#each assessmentlist.assessments}}
       <tr>
         <td>
           {{title}}
@@ -21,12 +21,12 @@
           {{duration}}
         </td>
         <td>
-          <a href="/song/{{../playlist.id}}/editsong/{{id}}" class="ui icon button">
+          <a href="/assessment/{{../assessmentlist.id}}/editassessment/{{id}}" class="ui icon button">
             <i class="pencil alternate icon"></i>
           </a>
         </td>
         <td>
-          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui icon button">
+          <a href="/assessmentlist/{{../assessmentlist.id}}/deleteassessment/{{id}}" class="ui icon button">
             <i class="icon trash"></i>
           </a>
         </td>

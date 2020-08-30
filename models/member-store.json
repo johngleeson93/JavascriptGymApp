@@ -1,0 +1,26 @@
+{
+  "members": [
+    {
+      "firstname": "John",
+      "lastname": "Gleeson",
+      "email": "john.gleeson93@gmail.com",
+      "password": "johnnyg93",
+      "address": "341 Glantan",
+      "height": "178",
+      "startWeight": "85",
+      "gender": "m",
+      "id": "99141e10-e91c-11ea-8872-9b09dc1b2e5f"
+    },
+    {
+      "firstname": "marge",
+      "lastname": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "17 springfield",
+      "height": "178",
+      "startWeight": "55",
+      "gender": "f",
+      "id": "ec26fb10-e929-11ea-80f7-ff5a113bcf83"
+    }
+  ]
+}
