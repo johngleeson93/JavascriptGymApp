@@ -2,10 +2,10 @@
 
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
-const assessmentlistStore = require("../models/assessmentlist-store.js");
+const assessmentStore = require("../models/assessment-store.js");
 const memberStore = require("../models/member-store.js");
 const uuid = require("uuid");
-const utility = require("./utility.js");
+const Utility = require("../controllers/utility.js")
 
 const dashboard = {
   index(request, response) {
@@ -13,9 +13,11 @@ const dashboard = {
     const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       title: "Member Dashboard",
-      //assessments: assessmentlistStore.getMemberAssessments(loggedInMember.id),
       member: memberStore.getMemberById(loggedInMember.id),
-//      bmi: utility.bmi(memberStore.getMemberById(loggedInMember.id), assessmentlistStore.getMemberAssessments[0])
+      assessments: assessmentStore.getMemberAssessments(loggedInMember.id).reverse(),
+      bmi: Utility.bmi(loggedInMember.id),
+      bmiCat: Utility.bmiCat(loggedInMember.id),
+      isIdealWeight: Utility.isIdealWeight(loggedInMember.id)
     };
     logger.info("about to render ${memberid}");
     response.render("dashboard", viewData);
@@ -25,7 +27,7 @@ const dashboard = {
     const loggedInMember = accounts.getCurrentMember(request);
     const assessmentId = request.params.id;
     logger.debug(`Deleting Assessment ${assessmentId}`);
-    assessmentlistStore.removeAssessment(assessmentId);
+    assessmentStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
 
@@ -40,26 +42,30 @@ const dashboard = {
       thigh: Number(request.body.thigh),
       upperArm: Number(request.body.upperArm),
       waist: Number(request.body.waist),
-      hips: Number(request.body.hips)
+      hips: Number(request.body.hips),
+      trend: Utility.trend
     };
     logger.debug("Adding a new Assessment", newAssessment);
-    assessmentlistStore.addAssessment(newAssessment);
+    assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   },
   
   edit(request, response) {
     logger.debug("rendering edit member form");
-    response.redirect("/editmember");
+    response.render("editmember");
   },
   
   editMember(request, response) {
     const memberId = request.params.id;
-    const member = memberStore.getMember(memberId)
+    const member = accounts.getCurrentMember(request);
     const updatedMember = {
-      name: request.body.name,
       email: request.body.email,
+      name: request.body.name,
       address: request.body.address,
-      gender: request.body.gender
+      gender: request.body.gender,
+      password: request.body.password,
+      height: request.body.height,
+      startingWeight: request.body.startingWeight
     };
     logger.debug(`Updating ${member}`);
     memberStore.editMember(member, updatedMember);

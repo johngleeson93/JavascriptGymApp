@@ -18,9 +18,6 @@ router.get("/dashboard", dashboard.index);
 router.get("/dashboard/deleteassessment/:id", dashboard.deleteAssessment);
 router.get("/about", about.index);
 router.post("/dashboard/addassessment", dashboard.addAssessment);
-router.get("/trainerdashboard", trainer.index);
-router.get("/editmember", dashboard.edit);
 router.post("/dashboard/editmember", dashboard.editMember);
-router.post("/members/:id/addcomment/:assessment.id", trainer.comment);
 
 module.exports = router;

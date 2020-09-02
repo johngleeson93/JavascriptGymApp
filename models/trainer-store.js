@@ -29,6 +29,10 @@ const trainerStore = {
     this.store.save();
   },
 
+  getTrainer(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+  
   getTrainerById(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
@@ -37,10 +41,10 @@ const trainerStore = {
     return this.store.findOneBy(this.collection, { email: email });
   },
   
-  comment(member, comment) {
-    member.comment = comment
-    this.store.save();
-  }
+  trainerCheckPassword(password) {
+    return this.store.findOneBy(this.collection, { password: password });
+  },
+  
 };
 
 module.exports = trainerStore;
