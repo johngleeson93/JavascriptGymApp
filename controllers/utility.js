@@ -19,7 +19,7 @@ const utility = {
     }
   },
   
-  bmiCat(id) {
+  bmiCategory(id) {
     const member = memberStore.getMemberById(id);
     const assessments = assessmentStore.getMemberAssessments(id);
     const bmi = this.bmi(id);
@@ -45,14 +45,14 @@ const utility = {
         return "NORMAL";
     },
   
-  isIdealWeight(id) {
+  IdealWeight(id) {
     const member = memberStore.getMemberById(id);
     const assessments = assessmentStore.getMemberAssessments(id);
     const minHeight = 60;
     let idealWeight = 45.5;
     const metersToInches = 39.3701;
     const kgPerExtraInch = 2.3;
-    let isIdealBodyWeight = "";
+    let idealBodyWeight = "";
 
         if (member.gender === (("Male") || ("male") || ("m"))) {
           idealWeight = 50;
@@ -64,12 +64,12 @@ const utility = {
           idealWeight += ((metersToInches * (member.height/100)) - 60) * kgPerExtraInch;
         }
         if (assessments.length === 0) {
-          isIdealBodyWeight = (member.startingWeight <= (idealWeight+0.2)) && (member.startingWeight >= (idealWeight-0.2));
+          idealBodyWeight = (member.startingWeight <= (idealWeight+0.2)) && (member.startingWeight >= (idealWeight-0.2));
         }
         else {
-          isIdealBodyWeight = (assessments[assessments.length-1].weight <= (idealWeight+0.2)) && (assessments[assessments.length-1].weight >= (idealWeight-0.2));
+          idealBodyWeight = (assessments[assessments.length-1].weight <= (idealWeight+0.2)) && (assessments[assessments.length-1].weight >= (idealWeight-0.2));
         }
-        return isIdealBodyWeight;
+        return idealBodyWeight;
   },
   
   trend(id) {

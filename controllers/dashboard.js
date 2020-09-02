@@ -16,8 +16,8 @@ const dashboard = {
       member: memberStore.getMemberById(loggedInMember.id),
       assessments: assessmentStore.getMemberAssessments(loggedInMember.id).reverse(),
       bmi: Utility.bmi(loggedInMember.id),
-      bmiCat: Utility.bmiCat(loggedInMember.id),
-      isIdealWeight: Utility.isIdealWeight(loggedInMember.id)
+      bmiCategory: Utility.bmiCategory(loggedInMember.id),
+      IdealWeight: Utility.IdealWeight(loggedInMember.id)
     };
     logger.info("about to render ${memberid}");
     response.render("dashboard", viewData);
