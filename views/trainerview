@@ -1,7 +1,0 @@
-{{> trainermenu id="dashboard"}}
-
-
-<section class="ui raised segment">
-    {{> trainerviewanalytics}}
-    {{> listtrainerassessments}}
-</section>
