@@ -1,0 +1,26 @@
+{
+  "assessmentCollection": [
+    {
+      "id": "14c8f050-ed49-11ea-bd06-ab2a32f2dfb7",
+      "memberId": "b3ef8060-ed47-11ea-a412-b36ed57d2503",
+      "dateAndTime": "Wed, 02 Sep 2020 18:21:12 GMT",
+      "weight": 85,
+      "chest": 0,
+      "thigh": 0,
+      "upperArm": 0,
+      "waist": 0,
+      "hips": 0
+    },
+    {
+      "id": "1ab3adc0-ed49-11ea-bd06-ab2a32f2dfb7",
+      "memberId": "b3ef8060-ed47-11ea-a412-b36ed57d2503",
+      "dateAndTime": "Wed, 02 Sep 2020 18:21:22 GMT",
+      "weight": 400,
+      "chest": 0,
+      "thigh": 0,
+      "upperArm": 0,
+      "waist": 0,
+      "hips": 0
+    }
+  ]
+}

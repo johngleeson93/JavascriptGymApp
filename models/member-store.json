@@ -1,6 +1,39 @@
 {
   "members": [
     {
+      "name": "John Dorian",
+      "email": "j@d.com",
+      "password": "secret",
+      "address": "Sacred Heart Hospital, 12629 Riverside Drive, Valley Village, CA 91607",
+      "gender": "Male",
+      "height": "182",
+      "startingWeight": "77",
+      "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+      "numAssessments": 3
+    },
+    {
+      "name": "Christopher Turk",
+      "email": "chris@turk.com",
+      "password": "secret",
+      "address": "Sacred Heart Hospital, 12629 Riverside Drive, Valley Village, CA 91607",
+      "gender": "male",
+      "height": "181",
+      "startingWeight": "80",
+      "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+      "numAssessments": 2
+    },
+    {
+      "name": "Elliot Reid",
+      "email": "elliot@reid.com",
+      "password": "secret",
+      "address": "Sacred Heart Hospital, 12629 Riverside Drive, Valley Village, CA 91607",
+      "gender": "female",
+      "height": "173",
+      "startingWeight": "57",
+      "id": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+      "numAssessments": 0
+    },
+    {
       "firstname": "John",
       "lastname": "Gleeson",
       "email": "john.gleeson93@gmail.com",
@@ -9,40 +42,18 @@
       "height": "178",
       "startWeight": "85",
       "gender": "m",
-      "id": "99141e10-e91c-11ea-8872-9b09dc1b2e5f"
-    },
-    {
-      "firstname": "marge",
-      "lastname": "simpson",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "address": "17 springfield",
-      "height": "178",
-      "startWeight": "55",
-      "gender": "f",
-      "id": "ec26fb10-e929-11ea-80f7-ff5a113bcf83"
+      "id": "b3ef8060-ed47-11ea-a412-b36ed57d2503"
     },
     {
       "firstname": "John",
       "lastname": "Gleeson",
-      "email": "marge@simpson.com",
-      "password": "secret",
+      "email": "john.gleeson93@gmail.com",
+      "password": "johnnyg93",
       "address": "341 Glantan",
       "height": "178",
-      "startWeight": "85",
+      "startWeight": "86",
       "gender": "m",
-      "id": "fd9e5480-eadf-11ea-bf9c-7d8960fa49c9"
-    },
-    {
-      "firstname": "John",
-      "lastname": "Gleeson",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "address": "341 Glantan",
-      "height": "178",
-      "startWeight": "85",
-      "gender": "m",
-      "id": "4cb2f0e0-eae4-11ea-8cca-8d11ddfe83da"
+      "id": "e42e4fd0-ed48-11ea-b255-6b7c86aafca9"
     }
   ]
 }

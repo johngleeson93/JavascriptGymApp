@@ -1,6 +1,10 @@
 {
-  "trainers":
-  [
-    {}
-    ]
+  "trainers": [
+    {
+      "name": "John",
+      "email": "john@trainer.com",
+      "password": "secret",
+      "id": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s"
+    }
+  ]
 }
