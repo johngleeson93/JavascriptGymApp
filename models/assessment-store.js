@@ -40,12 +40,6 @@ const assessmentStore = {
     this.store.remove(this.collection, assessment);
     this.store.save();
   },
-  
-  comment(assessment, comment) {
-    assessment.comment = comment;
-    this.store.save();
-  }
-
 };
 
 module.exports = assessmentStore;
