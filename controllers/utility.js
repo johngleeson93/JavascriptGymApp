@@ -50,8 +50,8 @@ const utility = {
     const assessments = assessmentStore.getMemberAssessments(id);
     const minHeight = 60;
     let idealWeight = 45.5;
-    const metersToInches = 39.3701;
-    const kgPerExtraInch = 2.3;
+    const metersToInch = 39.3701;
+    const kgPerExtraIn = 2.3;
     let idealBodyWeight = "";
 
         if (member.gender === (("Male") || ("male") || ("m"))) {
@@ -60,8 +60,8 @@ const utility = {
         else {
           idealWeight = 45.5;
         }
-        if ((metersToInches * ((member.height/100))) > minHeight) {
-          idealWeight += ((metersToInches * (member.height/100)) - 60) * kgPerExtraInch;
+        if ((metersToInch * ((member.height/100))) > minHeight) {
+          idealWeight += ((metersToInch * (member.height/100)) - 60) * kgPerExtraIn;
         }
         if (assessments.length === 0) {
           idealBodyWeight = (member.startingWeight <= (idealWeight+0.2)) && (member.startingWeight >= (idealWeight-0.2));
