@@ -71,16 +71,6 @@ const utility = {
         }
         return idealBodyWeight;
   },
-  
-  trend(id) {
-    const member = memberStore.getMemberById(id);
-    const assessments = assessmentStore.getMemberAssessments(id);
-    let trend = "";
-    if (assessments.length>1) {
-      trend = assessments[assessments.length - 2].weight > assessments[assessments.length - 1].weight;
-    }
-    return trend;
-  }
 }
 
 module.exports = utility;

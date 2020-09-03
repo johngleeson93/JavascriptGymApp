@@ -3,27 +3,18 @@
   <thead>
     <tr>
       <th>Date/Time</th>
-      <th>Trend</th>
       <th>Weight</th>
       <th>Chest</th>
       <th>Thigh</th>
       <th>Upper Arm</th>
       <th>Waist</th>
       <th>Hips</th>
-      <th>Comment</th>
     </tr>
   </thead>
   <tbody>
       <tr>
         <td>
           {{dateAndTime}}
-        </td>
-        <td>
-           {{#if trend}}
-              <a class="ui teal tag label"></a>
-           {{else}}
-              <a class="ui red tag label"></a>
-           {{/if}}
         </td>
         <td>
           {{weight}}
@@ -43,17 +34,7 @@
         <td>
           {{hips}}
         </td>
-        <td>
-          {{comment}}
-        </td>
       </tr>
   </tbody>
 </table>
-<form class="ui stacked segment form" action="/trainerassessmentview/{{member.id}}/comment/{{id}}" method="POST">
-  <div class="field">
-    <label>Comments</label>
-    <input placeholder="Add Comment" type="text" name="comment">
-  </div>
-  <button class="ui blue submit button">Submit</button>
-</form>
 {{/each}}

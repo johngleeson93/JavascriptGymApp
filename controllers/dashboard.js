@@ -43,7 +43,6 @@ const dashboard = {
       upperArm: Number(request.body.upperArm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      trend: Utility.trend
     };
     logger.debug("Adding a new Assessment", newAssessment);
     assessmentStore.addAssessment(newAssessment);

@@ -2,14 +2,12 @@
   <thead>
     <tr>
       <th>Date/Time</th>
-      <th>Trend</th>
       <th>Weight</th>
       <th>Chest</th>
       <th>Thigh</th>
       <th>Upper Arm</th>
       <th>Waist</th>
       <th>Hips</th>
-      <th>Comment</th>
       <th> </th>
     </tr>
   </thead>
@@ -18,13 +16,6 @@
       <tr>
         <td>
           {{dateAndTime}}
-        </td>
-        <td>
-          {{#if trend}}
-              <a class="ui teal tag label"></a>
-           {{else}}
-              <a class="ui red tag label"></a>
-           {{/if}}
         </td>
         <td>
           {{weight}}
@@ -43,9 +34,6 @@
         </td>
         <td>
           {{hips}}
-        </td>
-        <td>
-          {{comment}}
         </td>
         <td>
           <a href="/dashboard/deleteassessment/{{id}}" class="ui icon button">

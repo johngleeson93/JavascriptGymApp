@@ -19,10 +19,9 @@ router.get("/dashboard/deleteassessment/:id", dashboard.deleteAssessment);
 router.get("/about", about.index);
 router.post("/dashboard/addassessment", dashboard.addAssessment);
 router.get("/trainerdashboard", trainer.index);
-//router.get("/trainerdashboard/:id/trainerassessmentview", trainer.trainerassessmentview)
+router.get("/trainerdashboard/:id/trainerassessmentview", trainer.trainerAssessmentView)
 router.get("/trainerdashboard/deletemember/:id", trainer.deleteMember)
 router.get("/editmember", dashboard.edit);
 router.post("/dashboard/editmember", dashboard.editMember);
-router.post("/trainerassessmentview/:id/comment/:assessmentid", trainer.comment);
 
 module.exports = router;
