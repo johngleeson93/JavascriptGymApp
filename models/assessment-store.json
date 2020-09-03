@@ -43,6 +43,17 @@
       "upperArm": 0,
       "waist": 0,
       "hips": 0
+    },
+    {
+      "id": "2e43f240-ede5-11ea-80c6-a3ec7ea60256",
+      "memberId": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+      "dateAndTime": "Thu, 03 Sep 2020 12:58:36 GMT",
+      "weight": 55,
+      "chest": 42,
+      "thigh": 26,
+      "upperArm": 10,
+      "waist": 32,
+      "hips": 34
     }
   ]
 }
