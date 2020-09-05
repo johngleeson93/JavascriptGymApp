@@ -34,23 +34,23 @@
       "hips": 0
     },
     {
-      "id": "054d3940-edd7-11ea-9142-9323e337edeb",
-      "memberId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
-      "dateAndTime": "Thu, 03 Sep 2020 11:17:15 GMT",
-      "weight": 60,
-      "chest": 0,
-      "thigh": 0,
-      "upperArm": 0,
-      "waist": 0,
-      "hips": 0
+      "id": "ffdd5680-ede9-11ea-9181-c7bc11a97a6f",
+      "memberId": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+      "dateAndTime": "Thu, 03 Sep 2020 13:33:06 GMT",
+      "weight": 55,
+      "chest": 22,
+      "thigh": 60,
+      "upperArm": 88,
+      "waist": 32,
+      "hips": 34
     },
     {
-      "id": "2e43f240-ede5-11ea-80c6-a3ec7ea60256",
-      "memberId": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
-      "dateAndTime": "Thu, 03 Sep 2020 12:58:36 GMT",
+      "id": "aa1d4e50-edf1-11ea-8c8e-515c3e126640",
+      "memberId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+      "dateAndTime": "Thu, 03 Sep 2020 14:27:58 GMT",
       "weight": 55,
       "chest": 42,
-      "thigh": 26,
+      "thigh": 60,
       "upperArm": 10,
       "waist": 32,
       "hips": 34

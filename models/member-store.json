@@ -3,22 +3,22 @@
     {
       "name": "John Gleeson",
       "email": "j@g.com",
-      "password": "secret",
-      "address": "Limerick",
-      "gender": "Male",
-      "height": "182",
-      "startingWeight": "77",
+      "password": "johnnyg93",
+      "address": "341 Glantan",
+      "gender": "m",
+      "height": "150",
+      "startingWeight": "65",
       "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
       "Assessments": 3
     },
     {
-      "name": "Mark Higgins",
+      "name": "Mark Trainer",
       "email": "mark@g.com",
-      "password": "secret",
-      "address": "Limerick",
-      "gender": "male",
-      "height": "181",
-      "startingWeight": "80",
+      "password": "johnnyg93",
+      "address": "341 Glantan",
+      "gender": "m",
+      "height": "178",
+      "startingWeight": "70",
       "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
       "Assessments": 2
     }
